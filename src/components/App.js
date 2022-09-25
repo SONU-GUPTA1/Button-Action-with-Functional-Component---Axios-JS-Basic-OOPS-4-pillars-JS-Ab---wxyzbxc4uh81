@@ -18,3 +18,19 @@
 
 
 // export default App;
+
+import React, {Component, useState} from "react";
+import "./../styles/App.css";
+let name = " Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+
+function App() {
+  return (
+    <div id="main">
+      <Component value={name}/>
+      
+    </div>
+  );
+}
+
+
+export default App;
