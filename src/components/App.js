@@ -21,7 +21,7 @@
 
 import React, {Component, useState} from "react";
 import "./../styles/App.css";
-let name = " Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+let name = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
 
 function App() {
   return (
