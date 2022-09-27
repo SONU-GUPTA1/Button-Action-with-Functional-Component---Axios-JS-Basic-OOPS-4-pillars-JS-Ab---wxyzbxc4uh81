@@ -3,14 +3,15 @@ import "./../styles/App.css";
 let name = " Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
 
 function App() {
-   const[data,setData] = useState(" ")
-  const change = ()=>{
-    setData(name)
+   const[data,setData] = useState(name);
+     const [isOn, setIsOn] = useState(false);
+      function change() {
+    setIsOn(!isOn);
   }
   return (
     <div id="main">
      <button id="click" onClick={change} >click</button>
-      <p id="para" >{data}</p>
+      {isOn && <p id="para">{data}</p>}
       
     </div>
   );
